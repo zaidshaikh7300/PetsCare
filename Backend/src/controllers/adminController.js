@@ -1,38 +1,3 @@
-// const db = require("../config/db");
-
-// // GET ALL USERS
-// exports.getAllUsers = (req, res) => {
-//   db.query("SELECT id, name, email, role FROM users", (err, result) => {
-//     if (err) {
-//       console.log("GET USERS ERROR:", err);
-//       return res.status(500).send(err);
-//     }
-//     res.json(result);
-//   });
-// };
-
-// // GET ALL PETS
-// exports.getAllPets = (req, res) => {
-//   db.query("SELECT * FROM pets", (err, result) => {
-//     if (err) {
-//       console.log("GET ALL PETS ERROR:", err);
-//       return res.status(500).send(err);
-//     }
-//     res.json(result);
-//   });
-// };
-
-// // DELETE PET BY ADMIN
-// exports.deletePetByAdmin = (req, res) => {
-//   db.query("DELETE FROM pets WHERE id = ?", [req.params.id], (err) => {
-//     if (err) {
-//       console.log("ADMIN DELETE PET ERROR:", err);
-//       return res.status(500).send(err);
-//     }
-//     res.send("Pet Deleted By Admin");
-//   });
-// };
-
 const db = require("../config/db");
 const { addActivityLog } = require("../services/activityLogService");
 
