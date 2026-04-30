@@ -66,7 +66,8 @@ PetCare/
 │   ├── src/
 │   ├── public/
 │   └── package.json
-│
+|   └── .env
+|  
 ├── .gitignore
 └── README.md
 
@@ -74,7 +75,9 @@ PetCare/
 
 
 ## Create .env File
-Create a `.env` file
+Create a `.env` file in both frontend and backend folders.
+
+### Backend `.env`
 
 Example:
 
@@ -96,6 +99,20 @@ MAIL_FROM=PetCare App <yourgmail@gmail.com>
 
 JWT_SECRET=your_secret_key
 
+```
+
+### Frontend `.env`
+
+Example:
+
+```env
+
+Create file:
+
+Frontend/.env
+
+VITE_API_URL=http://localhost:5000/api
+```
 
 # Database Setup
 
