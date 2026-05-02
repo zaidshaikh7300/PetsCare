@@ -82,6 +82,11 @@ Create a `.env` file in both frontend and backend folders.
 Example:
 
 ```env
+
+Create file:
+
+Frontend/.env
+
 PORT=5000
 
 DB_HOST=localhost
