@@ -85,7 +85,7 @@ Example:
 
 Create file:
 
-Frontend/.env
+Backend/.env
 
 PORT=5000
 
